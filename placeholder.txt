@@ -1,0 +1,13 @@
+<img id="background-img"  src="images/background-img.jpg">
+    <div id="slogan">
+        <h1>WE ARE THE MUSIC MAKERS</h1>
+    </div>
+    <div id="mission-statement">
+        <div id="text-box">
+        <h2>Our mission at StarSync Studios is bringing together the people that <em>make it happen</em> blah blah blah blah blah blah</h2>
+        </div>
+    </div>
+
+    document.getElementById('sign-up-btn').addEventListener('click', function() {
+  document.querySelector('#background-modal').style.display = 'flex';
+});

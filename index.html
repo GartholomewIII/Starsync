@@ -2,13 +2,77 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar">
+
+    <!--NAV Section-->
+<nav id="parent-nav">
+    <div id="logo">
+        <img id="logo-img" src="images/logo_img.png">
+    </div>
+    <div id="name">
+        <img id ="name-img" src="images/StarSync Studio.png">
+    </div>
+    <div id="menu">
+            <div id="home">
+               <a href="index.html" id="home-btn">Home</a>
+            </div>
+            <div id="about">
+                <a href="about.html" id="abt-btn">About</a>
+            </div>
+            <div id="contact">
+                <a href="contact.html" id="contact-btn">Contact</a>
+            </div>
+    </div>
+    <div id="sign-up">
+        <button id="sign-up-btn" onclick="openModal()">Join Our Mailing List</button>
+    </div>
+</nav>
+<div id="wrapper">
+    <div id="content">
+        <!-- Slogan Section-->
+
+        <div id="parent-slogan">
+            <img id="background-img"  src="images/background-img.jpg">
+            <div id="slogan">
+                <h1>WE ARE THE MUSIC MAKERS</h1>
+            </div>
+            <div id="mission-statement">
+                <div id="text-box">
+                    <h2>Our mission at StarSync Studios is bringing together the people that <em>make it happen</em> blah blah blah blah blah blah</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="background-modal">
+    <div id="modal-content">
+        <div id="close" onclick="closeModal()">
+            +
+        </div>
+        <div id="modal-logo">
+            <img id="modal-logo-img" src="images/logo_img.png" alt="starsync logo">
+            
+        </div>
+        <div id="nameinput">
+            <input id="name">
+        </div>
+        <div id="email-input">
+            <input id="email">
+        </div>
+        <div id="where-heard-from">
+            <input id="source">
+        </div>
         
     </div>
+</div>
+<!-- <div id="container"></div> -->
+<script src="code.js"></script>
 </body>
 </html>
