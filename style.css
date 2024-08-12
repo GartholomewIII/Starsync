@@ -210,8 +210,27 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
     padding: 5px;
-    border: 2px solid black;
+}
+#where-heard-from {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#name-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#email-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#modal-content h2 {
+    margin-right: 10px;
 }
 
 /* Mobile Design */
