@@ -43,4 +43,23 @@ function openModal() {
 function closeModal() {
   document.querySelector('#background-modal').style.display = 'none';
 }
+function ifOther() {
+  if (document.getElementById('where-heard-from-input').value == 'other') {
+    document.querySelector('#if-other').style.display = 'flex';
+  }
+  else {
+    document.querySelector('#if-other').style.display = 'none';
+  }
+}
+
+let emailList = [];
+let nameList = [];
+
+function collectEmail() {
   
+  emailList.push(document.getElementById('email').value);
+  nameList.push(document.getElementById('name-input-input').value);
+}
+
+console.log(emailList);
+console.log(nameList);

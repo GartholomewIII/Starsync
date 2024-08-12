@@ -125,6 +125,8 @@ a:hover{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 2rem;
+    text-align: center;
 }
 #slogan {
     position: absolute;
@@ -144,14 +146,17 @@ a:hover{
 
 #mission-statement {
     display: flex;
-    justify-content: right;
-    
+    justify-content: center;    
     position: absolute;
     height: 500px;
     left: 750px;
+
 }
 #text-box {
-    width: 80%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -187,10 +192,11 @@ a:hover{
     display: none;
 }
 #modal-content {
-    width:500px;
-    height: 300px;
+    display: inline-block;
+    padding: 25px;
     background-color: white;
     position: relative;
+    border-radius: 25px;
 }
 #close {
     position: absolute;
@@ -198,8 +204,7 @@ a:hover{
     right: 14px;
     font-size: 2.5rem;
     transform: rotate(45deg);
-    cursor:
-    pointer;
+    cursor: pointer;
 }
 #close:hover {
     color:rgba(216, 42, 39, 0.466); 
@@ -217,22 +222,80 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5px;
     
 }
 #name-input {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5px;
 }
 #email-input {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5px;
 }
 #modal-content h2 {
     margin-right: 10px;
 }
+#submit-btn-box {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Input Section */
+#name-input-input {
+    border-radius: 5px ;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+#email {
+    border-radius: 5px ;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+#submit-btn {
+    font-size: 1.3rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#submit-btn:hover {
+    cursor: pointer;
+    background: rgba(216, 42, 39, 0.466);
+    border: none;
+}
 
+#if-other {
+    display: none;
+}
+
+#where-heard-from-input {
+    border-radius: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+    margin-left: 4px;
+}
+
+#name-input, #email-input, #where-heard-from, #if-other {
+    padding: 10px;
+}
 /* Mobile Design */
 
 @media (max-width: 500px) {

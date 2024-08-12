@@ -45,7 +45,7 @@
             </div>
             <div id="mission-statement">
                 <div id="text-box">
-                    <h2>Our mission at StarSync Studios is bringing together the people that <em>make it happen</em> blah blah blah blah blah blah</h2>
+                    <h2>At StarSync Studio, our mission is to revolutionize the music production landscape by empowering creators with cutting-edge collaborative tools and AI-enhanced processes. We are committed to making high-quality music production accessible to all, fostering creativity, and building a global community of music producers, film scorers, and audio engineers. Through innovative technology and a unique subscription model, we aim to redefine the way music is made, ensuring every artist has the resources to bring their vision to life.</h2>
                 </div>
             </div>
         </div>
@@ -60,24 +60,32 @@
             <img id="modal-logo-img" src="images/logo_img.png" alt="starsync logo">
             
         </div>
-        <div id="name-input">
-            <h2>Name:</h2>
-            <input id="name">
-        </div>
-        <div id="email-input">
-            <h2>Email:</h2>
-            <input id="email">
-        </div>
-        <div id="where-heard-from">
-            <h2>Where Did You Hear About Us?</h2>
-            <select name="where-heard" id="where-heard-from-input">
-                <option value="Instagram">Instagram</option>
-                <option value="tiktok">TikTok</option>
-                <option value="youtube">YouTube</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-        
+        <form onsubmit="collectEmail()">
+            <div id="name-input">
+                <h2>Name:</h2>
+                <input id="name-input-input" placeholder="Your Name" required>
+            </div>
+            <div id="email-input">
+                <h2>Email:</h2>
+                <input id="email" placeholder="Your Email" required>
+            </div>
+            <div id="where-heard-from">
+                <h2>Where Did You Hear About Us?</h2>
+                <select onclick="ifOther()" name="where-heard" id="where-heard-from-input" required>
+                    <option value="Instagram">Instagram</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div id="if-other">
+                <h2>If Other, Please State Where</h2>
+                <input id="other-input">
+            </div>
+            <div id="submit-btn-box">
+                <button id="submit-btn" type="submit">Submit</button>
+            </div>
+        </form>
     </div>
 </div>
 <!-- <div id="container"></div> -->
