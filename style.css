@@ -16,7 +16,8 @@ body {
     font-family: "Bebas Neue", sans-serif;
 }
 #content {
-    padding: 225px;
+    padding: 225px; 
+
 }
 #wrapper {
     margin-top: 0 ;
@@ -30,7 +31,9 @@ body {
     display: flex;
     position: fixed;
     width: 100%;
-    height: 100px
+    height: 100px;
+    background-color: white;
+    z-index: 4;
 
 }
 #logo, #name, #menu, #sign-up {
@@ -112,7 +115,7 @@ a:hover{
     
     display: flex;
     width: 80%;
-    height: 350px;
+    height: 100vh;
     justify-content:flex-start;
 
 }
@@ -176,7 +179,7 @@ a:hover{
 
 } */
 
-/* About Section */
+
 
 /* SIGN UP POP-UP SECTION */
 
@@ -296,14 +299,20 @@ a:hover{
 #name-input, #email-input, #where-heard-from, #if-other {
     padding: 10px;
 }
-/* Mobile Design */
 
-@media (max-width: 500px) {
-    #name-img {
-        display: none;
-    }
-    #logo-img {
-        margin-left: 35px;
+/* About section */ 
 
-    }
+#about-parent {
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+img[src$=".gif"], img[src$=".png"] {
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }

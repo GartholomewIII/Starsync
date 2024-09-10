@@ -1,0 +1,173 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    margin: none;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Bebas Neue", sans-serif;
+}
+#content {
+    padding: 5%;
+
+}
+#wrapper {
+    margin-top: 0 ;
+    
+}
+
+
+/*navbar */
+
+#parent-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#name-img {
+    display: none;
+}
+#logo {
+    width: 25%;
+} 
+/*menu section */
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+#home, #about, #contact {
+    padding: 5%;
+   
+}
+#contact {
+    line-height: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+    border: none;
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 3%;
+} 
+/* sign-up section */
+#sign-up {
+    width: 20%;
+    background-color: none;
+}
+#sign-up-btn {
+    
+        text-decoration: none;
+        color: black;
+        border: none;
+        font-size: 1.5rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 3%;
+        background-color: none;
+
+}
+
+/*pg one content */
+#background-img {
+    display: none;
+}
+#slogan {
+    display: none;
+}
+#mission-statement {
+    display: flex;
+    position: inherit;
+    left: auto;
+    height: auto;
+}
+#text-box {
+    width: 100%;
+}
+/*modal cont */ 
+#background-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#modal-content {
+    display: inline-block;
+    padding: 25px;
+    background-color: white;
+    position: relative;
+    border-radius: 25px;
+}
+#close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 2.5rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+#close:hover {
+    color:rgba(216, 42, 39, 0.466); 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+#modal-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+#where-heard-from {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    
+}
+#name-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+#email-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+#modal-content h2 {
+    margin-right: 10px;
+}
+#submit-btn-box {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#other-input {
+    text-align: top;
+    justify-content: left;
+}
